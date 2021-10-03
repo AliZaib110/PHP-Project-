@@ -1,0 +1,684 @@
+.public-profile-container .remove-padding {
+  padding: 0;
+}
+
+.profile-container:before {
+  content: "";
+  display: block;
+  padding-top: 25%;
+  /*background: #dedede;*/
+}
+
+.profile-container {
+  margin-bottom: 40px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.profile-image {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  width: 8%;
+  padding: 8%;
+  background-size: cover;
+  border-radius: 50%;
+  cursor: default;
+  border:4px solid #fff;
+}
+
+.user-basic-info {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+#displayName {
+  font-size: 23px;
+  line-height: 2.2;
+  font-weight: 400;
+}
+
+.verification-badges-section {
+  margin-top: 27px;
+}
+
+.verifications-heading {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.about-section .user-filled-info {
+  padding-right: 20px;
+}
+
+.review-short-summary-section{
+  float: right;
+}
+
+.review-short-summary-section .nav-tabs {
+  border-radius: 5px;
+}
+
+.review-short-summary-section .tab-content {
+  border-radius: 5px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #38b44e;
+}
+
+.tab-content .tasker-reviews, .tab-content .poster-reviews {
+  padding: 8px 20px;
+}
+
+.profile-heading {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.skills-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.skills-section .badge {
+  background-color: #f5f9fc;
+  color: #889CA6;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.tranportations {
+  margin-top: 20px;
+}
+
+.more-info {
+  background-color: #cad7dc;
+  border-radius: 50%;
+  padding: 0 10px;
+  color: #fff;
+  font-style: italic;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.more-info-details {
+  display: none;
+  background-color: #839094;
+  color: #fff;
+  position: absolute;
+  z-index: 1000;
+  border-radius: 5px;
+  padding: 9px 13px;
+  margin-top: 5px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.more-info-details:after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(45deg) translateX(-50%);
+          transform: rotate(45deg) translateX(-50%);
+  left: 85%;
+  top: 0;
+  background-color: #839094;
+  content: "";
+}
+
+.tasker-completion-rate-main .more-info:hover + .more-info-details {
+  display: block;
+}
+
+.poster-completion-rate-main .more-info:hover + .more-info-details {
+  display: block;
+}
+
+.skills {
+  display: none;
+}
+
+.skills .badge {
+  margin-right: 5px;
+}
+
+.portfolio-attachment-input {
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  border: 2px dashed #f1f1f1;
+  display: inline-block;
+}
+
+.portfolio-attachment-input:hover {
+  color: #5a9e47;
+  border: 2px dashed #5a9e47;
+}
+
+.portfolio-attachment-input input {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  height: 68px;
+  width: 68px;
+}
+
+.portfolio-attachment-input span {
+  padding-top: 20px;
+}
+
+.portfolio-attachment-error {
+  display: none;
+}
+
+.user_uploaded_portfolio_attachments {
+  display: inline;
+}
+
+.portolio_attachment {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 80px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  background-size: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-position: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.user_uploaded_portfolio_attachments img {
+  cursor: pointer;
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.pic-edit {
+  margin-top: -15px;
+  position: absolute;
+  right: -45px;
+  top: 50%;
+}
+
+.edit-banner-pic {
+  margin-top: -17px;
+  top: 10%;
+  display: none;
+  width: 40px;
+  position: absolute;
+  right: 10px;
+  padding: 5px;
+  text-align: center;
+  color: #38b44e;
+  background-color: #ECECEC;
+  border-radius: 4px;
+}
+
+.review-banner-pic{
+  margin-top: -17px;
+  top: 10%;
+  display: none;
+  position: absolute;
+  right: 10px;
+  padding: 5px;
+  text-align: center;
+  color: #38b44e;
+  background-color: #ECECEC;
+  border-radius: 4px;
+}
+
+.edit-banner-pic input {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  width: 40px;
+}
+
+.edit-profile-pic {
+  margin-top: -15px;
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  display: none;
+  width: 40px;
+  padding: 5px;
+  text-align: center;
+  color: #38b44e;
+  background-color: #ECECEC;
+  border-radius: 4px;
+}
+.review-profile-pic{
+  margin-top: -15px;
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  display: none;
+  padding: 5px;
+  text-align: center;
+  color: #38b44e;
+  background-color: #ECECEC;
+  border-radius: 4px;
+}
+
+.edit-profile-pic input {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  width: 40px;
+}
+
+.profile-attachment-error {
+  display: none;
+  text-align: center;
+  width: 100%;
+}
+
+.action-buttons {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.user-filled-info {
+  padding-bottom: 15px;
+}
+
+.user-filled-info .user-description {
+  padding-left: 0;
+  white-space: pre-line;
+}
+
+.portfolio-cancel-button {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.filled-skills .badge, .user-transportations .badge {
+  margin-right: 5px;
+  white-space: normal;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.user-skills {
+  width: 24%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.tasker-reviews, .poster-reviews {
+  text-align: right;
+  font-size: 14px;
+}
+
+.tasker-reviews .tasker_total_completed_tasks, .poster-reviews .poster_total_completed_tasks {
+  font-size: 12px;
+}
+
+.profile-group .list-group-item {
+  clear: both;
+}
+
+.user-tagline {
+  font-size: 13px;
+  font-weight: 800;
+  width: 50%;
+}
+
+/*
+#skillsForm .form-check-label{
+    margin-right: 10px;
+}*/
+#skillsForm .form-check {
+  margin-bottom: 15px;
+}
+
+.form-check-input {
+  width: 25px;
+  height: 25px;
+}
+
+.form-check-label span {
+  vertical-align: super;
+}
+
+#skillsForm .bootstrap-tagsinput .tag {
+  color: #839094;
+}
+
+#skillsForm .bootstrap-tagsinput {
+  padding: 12px;
+}
+
+#skillsForm .bootstrap-tagsinput .label {
+  font-weight: normal;
+}
+
+.label-info {
+  background-color: #f3f5f6;
+  font-size: 100%;
+  border-radius: 50px;
+}
+
+.label-info span {
+  background-color: #cad7dc;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0 5px;
+}
+
+.label-info span:hover {
+  background-color: red;
+}
+
+.portfolio-db-error, .portfolio-file-size-error {
+  display: none;
+}
+
+.reviews-section {
+  margin-top: 20px;
+}
+
+.star-rating-counts .rating-container {
+  font-size: 0.7em;
+  display: inline-block;
+}
+
+.reviews-section .latest-reviews {
+  margin: 0;
+  padding: 0;
+}
+
+.reviews-section .latest-reviews .review-item {
+  margin-top: 20px;
+  padding: 0;
+}
+
+#email_badge_verification_msg {
+  display: none;
+  font-size: 20px;
+  margin-right: 100px;
+  color: #58b241;
+  float: right;
+}
+
+.verified-badges .verified {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.verified-badges .badge-text {
+  margin-left: 30px;
+  position: absolute;
+  margin-top: 3px;
+}
+
+.review-item .review-detail {
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.review-item .review-detail .task-title, .review-item .review-detail .poster-name a {
+  color: #099DCA;
+}
+
+.reviews-content-area {
+  margin-bottom: 50px;
+}
+
+.stars-count {
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+#poster-mini-reviews .star_and_reviews_count, #tasker-mini-reviews .star_and_reviews_count {
+  color: #3A3D3E;
+}
+
+#poster-mini-reviews .poster-completion-rate-main, #poster-mini-reviews .poster_total_completed_tasks, #tasker-mini-reviews .tasker-completion-rate-main, #tasker-mini-reviews .tasker_total_completed_tasks {
+  color: #839094;
+}
+
+#tasker-mini-reviews .tasker-completion-rate-main, #poster-mini-reviews .poster-completion-rate-main {
+  font-size: 13px;
+}
+
+.btn-sm {
+  font-size: 17px;
+  padding: 5px 20px;
+}
+
+.about-edit {
+  margin-left: 20px;
+}
+
+.edit-description-box {
+  height: 110px;
+  /*width: 475px;*/
+  width: 98%;
+  resize: none;
+}
+
+#aboutForm {
+  margin-bottom: 20px;
+}
+
+.bootstrap-tagsinput .tag {
+  background-color: #f5f9fc;
+  color: #889CA6 !important;
+  font-size: 13px;
+}
+
+.portfolio-edit, .edit-cats {
+  position: absolute;
+  margin-top: -15px;
+  top: 50%;
+  right: -30px;
+}
+
+.drag-banner-pic {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  background-color: #ECECEC;
+  padding: 8px 25px;
+  color: #38b44e;
+  border-radius: 4px;
+  cursor: move;
+}
+
+.portolio_attachment {
+  display: inline-block;
+  position: relative;
+}
+
+.delete-profile-attachment {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #C9D0D6;
+  padding: 3px;
+  left: 85px;
+  cursor: pointer;
+  display: none;
+}
+
+.delete-profile-attachment:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.drag-banner-pic {
+  display: none;
+}
+
+.large-attachment-section .large-attachment {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.large-attachment-section .large-attachment img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.uploading-profile-pic-spinner, .uploading-profile-banner-spinner {
+  display: none;
+}
+
+.edit-profile-pic, .edit-banner-pic {
+  cursor: pointer;
+}
+
+.edit-profile-pic input[type=file]::-webkit-file-upload-button, .edit-banner-pic input[type=file]::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
+
+.work-skills .filled-skills span{
+  display: block;
+}
+
+.supertasker-profile-img{
+  border:4px solid #fff;
+}
+
+.pic-loading-icon{
+  padding-top: 100px;
+}
+
+.cats-section .no-cats{
+  display: none;
+}
+
+.edit-cats-section .tasker-categories-list, .edit-cats-section .update-cats-link{
+  display: none;
+}
+
+.cat-action-buttons{
+  clear: both;
+  display: none;
+  padding-top: 40px;
+}
+
+.public-users-cats-list .selected{
+  padding-left:0;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.tasker-reviews-section .uploading-spinning-icon, .poster-reviews-section .uploading-spinning-icon{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .tablet-no-container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+  }
+
+  .profile-image{
+    border:2px solid #fff;
+  }
+}
+
+.no-reviews-as-tasker, .no-reviews-as-poster {
+  padding: 8px 5px;
+}
+
+.tasker-no-reviews, .poster-no-reviews {
+  padding-top: 10px;
+}
+
+
+@media (max-width: 600px) {
+  #displayName{
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: bold;
+  }
+  .review-short-summary-section{
+    margin: 20px auto;
+  }
+
+  .user-skills{
+    width: 98%;
+    margin-bottom: 12px;
+  }
+  .tranportations{
+    margin-top: 0;
+  }
+
+  .tasker-reviews, .poster-reviews{
+    text-align: center;
+  }
+
+  .pic-edit, .portfolio-edit, .edit, .edit-cats{
+    right: 0;
+  }
+
+  .portfolio-edit{
+    top: 10%;
+  }
+
+  .edit{
+    top: 5%;
+  }
+
+  .drag-banner-pic{
+    right: 10px;
+    padding: 8px 15px;
+  }
+
+  .edit-banner-pic{
+    right: 40px;
+  }
+
+  .right-arrow{
+    left: 90%;
+    right: 0;
+    text-align: left;
+  }
+
+  .attachment-in-new-window{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .large-attachment-section .large-attachment{
+    width: 90%;
+  }
+
+  .portfolios-attached{
+    text-align: center;
+  }
+
+}
