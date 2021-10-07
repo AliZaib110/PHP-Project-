@@ -27,7 +27,7 @@ if (isset($_POST['update'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
     
-    var_dump($id);
+    // var_dump($id);
 
     $sql = "update users set username= '$username',
     email= '$email',
@@ -219,7 +219,8 @@ if (isset($_POST['update'])) {
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                         <div class="d-md-flex">
                             <ol class="breadcrumb ms-auto">
-                                <li><a href="#" class="fw-normal">Dashboard</a></li>
+                            <button onclick="goBack()">Go Back</button>
+                                <!-- <li><a href="#" class="fw-normal">Dashboard</a></li> -->
                             </ol>
 
                         </div>
@@ -343,6 +344,11 @@ if (isset($_POST['update'])) {
     <script src="js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="js/custom.js"></script>
+    <script>
+function goBack() {
+  window.history.back();
+}
+</script>
 </body>
 
 </html>
